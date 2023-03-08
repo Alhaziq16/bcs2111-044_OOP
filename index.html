@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Information</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+   
+    <nav>
+      <ul>
+        <li><a href="index.html">Weather</a></li>
+        <li><a href="meals.html">Meals</a></li>
+      </ul>
+    </nav>
+    <br>
+
+    <section class="weather-section">
+      <h1>Weather Information</h1>
+      <label for="places">Select a City in Italy:</label>
+      <select id="places" name="places">
+        <option value="">-- Select a City --</option>
+        <option value="Rome">Rome</option>
+        <option value="Milan">Milan</option>
+        <option value="Naples">Naples</option>
+        <option value="Turin">Turin</option>
+        <option value="Palermo">Palermo</option>
+        <option value="Genoa">Genoa</option>
+        <option value="Bologna">Bologna</option>
+        <option value="Florence">Florence</option>
+        <option value="Catania">Catania</option>
+        <option value="Venice">Venice</option>
+      </select>
+      <button type="button" onclick="getWeather()">Get Weather</button>
+      <div id="weather"></div>
+    </section>
+
+    <section class="image-section">
+      <h1>Interesting Places to Visit</h1>
+      <div id="city-image-container">
+        <div class="city-image-box">
+            <div class="city-name">Rome</div>
+            <a href="https://www.rome.info/"><img src="rome.jpeg" alt="Rome"></a>
+        </div>
+        
+        <div class="city-image-box">
+            <div class="city-name">Milan</div>
+            <a href="https://www.getyourguide.com/-l139/?cmp=ga&cq_src=google_ads&cq_cmp=15511528718&cq_con=132581184364&cq_term=travel%20milan&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15511528718&adgroup_id=132581184364&target_id=kwd-106225809&loc_physical_ms=9065449&match_type=e&ad_id=570506022875&keyword=travel%20milan&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=CjwKCAiA3pugBhAwEiwAWFzwdYLsILEvjeJtKJ4qy37GMVjU1FF7Azu1Z190NgaFtZ4-2Y_kN0NIIRoCFccQAvD_BwE"><img src="milan.jpeg" alt="Milan"></a>
+        </div>
+        
+        <div class="city-image-box">
+            <div class="city-name">Naples</div>
+            <a href="https://www.getyourguide.com/-l162/?cmp=ga&cq_src=google_ads&cq_cmp=15505366068&cq_con=132158665858&cq_term=travel%20naples%20italy&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15505366068&adgroup_id=132158665858&target_id=kwd-527629551&loc_physical_ms=9065449&match_type=e&ad_id=628213433487&keyword=travel%20naples%20italy&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=CjwKCAiA3pugBhAwEiwAWFzwdTZaoEnZeGoccKFIQHNRahsGQM3BWg8dHfO0-DNsctnucW9JBvoKfRoC1hgQAvD_BwE"><img src="naples.jpg" alt="Naples"></a>
+        </div>
+        
+        <div class="city-image-box">
+            <div class="city-name">Turin</div>
+            <a href="https://www.turismotorino.org/"><img src="turin.jpg" alt="Turin"></a>
+        </div>
+        
+        <div class="city-image-box">
+            <div class="city-name">Palermo</div>
+            <a href="https://www.getyourguide.com/-l387/?cmp=ga&cq_src=google_ads&cq_cmp=15505374459&cq_con=132581185884&cq_term=travel%20palermo%20italy&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=15505374459&adgroup_id=132581185884&target_id=kwd-297212370451&loc_physical_ms=9065449&match_type=b&ad_id=628213327890&keyword=travel%20palermo%20italy&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=CjwKCAiA3pugBhAwEiwAWFzwddSJI1INAtP6JahZPQK5j2ewhjpeCLIdQqy9XoGIflIHJCxvnscr0RoCwLkQAvD_BwE"><img src="palermo.jpeg" alt="Palermo"></a>
+        </div>
+        
+        <div class="city-image-box">
+            <div class="city-name">Florence</div>
+            <a href="https://www.visitflorence.com/"><img src="florence.jpeg" alt="Florence"></a>
+        </div>
+        
+        <div class="city-image-box">
+            <div class="city-name">Venice</div>
+            <a href="https://www.visit-venice-italy.com/"><img src="venice.jpeg" alt="Venice"></a>
+        </div>
+
+        
+    </section>
+    <script src="functions.js"></script>
+    
+  </body>
+</html>
+
